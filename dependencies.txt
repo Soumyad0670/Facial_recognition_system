@@ -1,0 +1,69 @@
+face_recognition
+opencv-python
+numpy
+
+
+- You need a working webcam.
+
+---
+
+## Notes
+
+- **Add more images per person** to increase recognition accuracy.
+- **Folder names** are used as labels/names displayed in recognition.
+- Press **`q`** in the video window to quit.
+
+---
+
+## Troubleshooting
+
+- If you see "Unknown" for all faces:
+- Check if your images in `known_faces` are clear and show faces frontally.
+- Ensure faces are successfully encoded (see console output when running encode_faces.py).
+- For hardware errors: make sure your webcam is correctly set up and accessible.
+
+---
+
+## License
+
+This project is for educational purposes.
+
+
+---
+
+## How it works
+
+1. **Add faces to known_faces/**  
+   Create a folder for each person, and put their images inside their folder.
+
+2. **Encode faces**  
+   Run `encode_faces.py` to create `encodings.pickle` from your `known_faces` directory.
+
+
+3. **Run video streaming and recognition**  
+Run `video_stream.py` to start webcam-based recognition.
+
+
+---
+
+## Detailed Explanation
+
+### encode_faces.py
+
+- Loads images and their labels (folder names).
+- Uses `face_recognition` to extract facial encodings.
+- Stores encodings and names into `encodings.pickle` using `pickle`.
+
+### video_stream.py
+
+- Loads encodings from `encodings.pickle`.
+- Captures frames from your webcam in real time.
+- Detects and recognizes faces, labeling them with names (or "Unknown" if not found).
+
+### utils.py
+
+- Helper function `load_images_from_folder()` to load all images and labels from a structured directory.
+
+### Requirements
+
+- Install dependencies:
