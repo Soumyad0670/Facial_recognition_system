@@ -161,11 +161,5 @@ Feel free to fork and modify it for learning and experimentation.
 
 ---
 
-## ✨ Demo
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Face Recognition Demo" width="500"/>
-</p>
-
----
 
