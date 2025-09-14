@@ -1,5 +1,3 @@
-Here’s a complete, polished `README.md` for your **Face Recognition System** project, written to be engaging, professional, and beginner-friendly:
-
 ---
 
 # 🎭 Face Recognition System
